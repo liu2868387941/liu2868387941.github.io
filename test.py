@@ -2,9 +2,9 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 @app.route('https://liu2868387941.github.io/')
 def index():
-   return render_template("/index")
+   return render_template("index")
 
-@app.route('https://liu2868387941.github.io/test')
+@app.route('https://liu2868387941.github.io/test.py')
 def information():
    if request.method == 'GET':
       fo=open("C:\\Users\\hp\\Documents\\GitHub\\liu2868387941.github.io\\data.txt"."r")
