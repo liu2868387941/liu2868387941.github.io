@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 @app.route('https://liu2868387941.github.io/')
 def index():
-   return render_template("/index")
+   return render_template("/index.html")
 
 @app.route('https://liu2868387941.github.io/test.py')
 def information():
